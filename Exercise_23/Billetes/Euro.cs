@@ -7,7 +7,7 @@ public class Euro
 
     static Euro()
     {
-        Euro.cotizRespectoDolar = 0.9053;
+        Euro.cotizRespectoDolar = 0.906;
     }
     public Euro(double cantidad)
     {
