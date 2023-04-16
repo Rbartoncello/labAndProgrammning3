@@ -75,7 +75,6 @@ namespace Exercise_23
                 this.txtEuroADolar.Text = $"{((Dolar)this.e).getCantidad()}";
                 this.txtEuroAPeso.Text = $"{((Peso)this.e).getCantidad()}";
             }
-
         }
 
         private void btnConvertDolar_Click(object sender, EventArgs e)
