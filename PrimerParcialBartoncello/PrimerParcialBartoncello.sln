@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimerParcialBartoncello", "PrimerParcialBartoncello\PrimerParcialBartoncello.csproj", "{7090ECB7-1B7F-4A84-A36A-706783596285}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7090ECB7-1B7F-4A84-A36A-706783596285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7090ECB7-1B7F-4A84-A36A-706783596285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7090ECB7-1B7F-4A84-A36A-706783596285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7090ECB7-1B7F-4A84-A36A-706783596285}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B60D415C-4BDF-49D4-B552-EA4919F03475}
+	EndGlobalSection
+EndGlobal
