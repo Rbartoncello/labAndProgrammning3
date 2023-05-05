@@ -1,4 +1,6 @@
-﻿namespace PrimerParcialBartoncello
+﻿using Entidades;
+
+namespace PrimerParcialBartoncello
 {
     partial class Form1
     {
@@ -18,8 +20,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
-        }
-
+        }//
         #region Windows Form Designer generated code
 
         /// <summary>
@@ -31,24 +32,24 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lstAlumnosCreados = new ListBox();
             lblAlumnosCreados = new Label();
-            groupBoxAsignarMateria = new GroupBox();
-            btbAsignarAlumnoSelec = new Button();
+            grpAsignarMateria = new GroupBox();
+            btnAsignar = new Button();
             lblMateria = new Label();
-            selecMaterias = new ComboBox();
-            lstAlumnosInscriptosProg = new ListBox();
+            cmbMaterias = new ComboBox();
+            lstAlumnosInscriptosProgramacion = new ListBox();
             label1 = new Label();
-            lstAlumnosInscriptosLab = new ListBox();
+            lstAlumnosInscriptosLaboratorio = new ListBox();
             label2 = new Label();
-            groupBoxAltaAlumno = new GroupBox();
+            grpAltaAlumno = new GroupBox();
             lblNombre = new Label();
             lblApellido = new Label();
             lblDni = new Label();
-            txtInputNombre = new TextBox();
-            txtInputApellido = new TextBox();
-            numberInputDni = new TextBox();
+            txtNombre = new TextBox();
+            txtApellido = new TextBox();
+            txtDni = new TextBox();
             btnCrearAlumno = new Button();
-            groupBoxAsignarMateria.SuspendLayout();
-            groupBoxAltaAlumno.SuspendLayout();
+            grpAsignarMateria.SuspendLayout();
+            grpAltaAlumno.SuspendLayout();
             SuspendLayout();
             // 
             // lstAlumnosCreados
@@ -62,67 +63,67 @@
             resources.ApplyResources(lblAlumnosCreados, "lblAlumnosCreados");
             lblAlumnosCreados.Name = "lblAlumnosCreados";
             // 
-            // groupBoxAsignarMateria
+            // grpAsignarMateria
             // 
-            groupBoxAsignarMateria.Controls.Add(btbAsignarAlumnoSelec);
-            groupBoxAsignarMateria.Controls.Add(lblMateria);
-            groupBoxAsignarMateria.Controls.Add(selecMaterias);
-            resources.ApplyResources(groupBoxAsignarMateria, "groupBoxAsignarMateria");
-            groupBoxAsignarMateria.Name = "groupBoxAsignarMateria";
-            groupBoxAsignarMateria.TabStop = false;
+            grpAsignarMateria.Controls.Add(btnAsignar);
+            grpAsignarMateria.Controls.Add(lblMateria);
+            grpAsignarMateria.Controls.Add(cmbMaterias);
+            resources.ApplyResources(grpAsignarMateria, "grpAsignarMateria");
+            grpAsignarMateria.Name = "grpAsignarMateria";
+            grpAsignarMateria.TabStop = false;
             // 
-            // btbAsignarAlumnoSelec
+            // btnAsignar
             // 
-            resources.ApplyResources(btbAsignarAlumnoSelec, "btbAsignarAlumnoSelec");
-            btbAsignarAlumnoSelec.Name = "btbAsignarAlumnoSelec";
-            btbAsignarAlumnoSelec.UseVisualStyleBackColor = true;
+            resources.ApplyResources(btnAsignar, "btnAsignar");
+            btnAsignar.Name = "btnAsignar";
+            btnAsignar.UseVisualStyleBackColor = true;
+            btnAsignar.Click += btnAsignar_Click;
             // 
             // lblMateria
             // 
             resources.ApplyResources(lblMateria, "lblMateria");
             lblMateria.Name = "lblMateria";
             // 
-            // selecMaterias
+            // cmbMaterias
             // 
-            selecMaterias.FormattingEnabled = true;
-            selecMaterias.Items.AddRange(new object[] { resources.GetString("selecMaterias.Items"), resources.GetString("selecMaterias.Items1") });
-            resources.ApplyResources(selecMaterias, "selecMaterias");
-            selecMaterias.Name = "selecMaterias";
+            cmbMaterias.FormattingEnabled = true;
+            resources.ApplyResources(cmbMaterias, "cmbMaterias");
+            cmbMaterias.Name = "cmbMaterias";
             // 
-            // lstAlumnosInscriptosProg
+            // lstAlumnosInscriptosProgramacion
             // 
-            lstAlumnosInscriptosProg.FormattingEnabled = true;
-            resources.ApplyResources(lstAlumnosInscriptosProg, "lstAlumnosInscriptosProg");
-            lstAlumnosInscriptosProg.Name = "lstAlumnosInscriptosProg";
+            lstAlumnosInscriptosProgramacion.FormattingEnabled = true;
+            resources.ApplyResources(lstAlumnosInscriptosProgramacion, "lstAlumnosInscriptosProgramacion");
+            lstAlumnosInscriptosProgramacion.Name = "lstAlumnosInscriptosProgramacion";
             // 
             // label1
             // 
             resources.ApplyResources(label1, "label1");
             label1.Name = "label1";
             // 
-            // lstAlumnosInscriptosLab
+            // lstAlumnosInscriptosLaboratorio
             // 
-            lstAlumnosInscriptosLab.FormattingEnabled = true;
-            resources.ApplyResources(lstAlumnosInscriptosLab, "lstAlumnosInscriptosLab");
-            lstAlumnosInscriptosLab.Name = "lstAlumnosInscriptosLab";
+            lstAlumnosInscriptosLaboratorio.FormattingEnabled = true;
+            resources.ApplyResources(lstAlumnosInscriptosLaboratorio, "lstAlumnosInscriptosLaboratorio");
+            lstAlumnosInscriptosLaboratorio.Name = "lstAlumnosInscriptosLaboratorio";
             // 
             // label2
             // 
             resources.ApplyResources(label2, "label2");
             label2.Name = "label2";
             // 
-            // groupBoxAltaAlumno
+            // grpAltaAlumno
             // 
-            groupBoxAltaAlumno.Controls.Add(lblNombre);
-            groupBoxAltaAlumno.Controls.Add(lblApellido);
-            groupBoxAltaAlumno.Controls.Add(lblDni);
-            groupBoxAltaAlumno.Controls.Add(txtInputNombre);
-            groupBoxAltaAlumno.Controls.Add(txtInputApellido);
-            groupBoxAltaAlumno.Controls.Add(numberInputDni);
-            groupBoxAltaAlumno.Controls.Add(btnCrearAlumno);
-            resources.ApplyResources(groupBoxAltaAlumno, "groupBoxAltaAlumno");
-            groupBoxAltaAlumno.Name = "groupBoxAltaAlumno";
-            groupBoxAltaAlumno.TabStop = false;
+            grpAltaAlumno.Controls.Add(lblNombre);
+            grpAltaAlumno.Controls.Add(lblApellido);
+            grpAltaAlumno.Controls.Add(lblDni);
+            grpAltaAlumno.Controls.Add(txtNombre);
+            grpAltaAlumno.Controls.Add(txtApellido);
+            grpAltaAlumno.Controls.Add(txtDni);
+            grpAltaAlumno.Controls.Add(btnCrearAlumno);
+            resources.ApplyResources(grpAltaAlumno, "grpAltaAlumno");
+            grpAltaAlumno.Name = "grpAltaAlumno";
+            grpAltaAlumno.TabStop = false;
             // 
             // lblNombre
             // 
@@ -139,67 +140,77 @@
             resources.ApplyResources(lblDni, "lblDni");
             lblDni.Name = "lblDni";
             // 
-            // txtInputNombre
+            // txtNombre
             // 
-            resources.ApplyResources(txtInputNombre, "txtInputNombre");
-            txtInputNombre.Name = "txtInputNombre";
+            resources.ApplyResources(txtNombre, "txtNombre");
+            txtNombre.Name = "txtNombre";
             // 
-            // txtInputApellido
+            // txtApellido
             // 
-            resources.ApplyResources(txtInputApellido, "txtInputApellido");
-            txtInputApellido.Name = "txtInputApellido";
+            resources.ApplyResources(txtApellido, "txtApellido");
+            txtApellido.Name = "txtApellido";
             // 
-            // numberInputDni
+            // txtDni
             // 
-            resources.ApplyResources(numberInputDni, "numberInputDni");
-            numberInputDni.Name = "numberInputDni";
+            resources.ApplyResources(txtDni, "txtDni");
+            txtDni.Name = "txtDni";
             // 
             // btnCrearAlumno
             // 
             resources.ApplyResources(btnCrearAlumno, "btnCrearAlumno");
             btnCrearAlumno.Name = "btnCrearAlumno";
             btnCrearAlumno.UseVisualStyleBackColor = true;
+            btnCrearAlumno.Click += btnCrearAlumno_Click;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(groupBoxAltaAlumno);
+            Controls.Add(grpAltaAlumno);
             Controls.Add(label2);
-            Controls.Add(lstAlumnosInscriptosLab);
+            Controls.Add(lstAlumnosInscriptosLaboratorio);
             Controls.Add(label1);
-            Controls.Add(lstAlumnosInscriptosProg);
-            Controls.Add(groupBoxAsignarMateria);
+            Controls.Add(lstAlumnosInscriptosProgramacion);
+            Controls.Add(grpAsignarMateria);
             Controls.Add(lblAlumnosCreados);
             Controls.Add(lstAlumnosCreados);
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Form1";
-            groupBoxAsignarMateria.ResumeLayout(false);
-            groupBoxAsignarMateria.PerformLayout();
-            groupBoxAltaAlumno.ResumeLayout(false);
-            groupBoxAltaAlumno.PerformLayout();
+            Load += Form1_Load;
+            grpAsignarMateria.ResumeLayout(false);
+            grpAsignarMateria.PerformLayout();
+            grpAltaAlumno.ResumeLayout(false);
+            grpAltaAlumno.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private ListBox lstAlumnosCreados;
-        private Label lblAlumnosCreados;
-        private GroupBox groupBoxAsignarMateria;
-        private ComboBox selecMaterias;
-        private Label lblMateria;
-        private Button btbAsignarAlumnoSelec;
-        private ListBox lstAlumnosInscriptosProg;
-        private Label label1;
-        private ListBox lstAlumnosInscriptosLab;
-        private Label label2;
-        private GroupBox groupBoxAltaAlumno;
+        private Persona alumno;
+        private Button btnAsignar;
         private Button btnCrearAlumno;
-        private Label lblDni;
-        private TextBox txtInputNombre;
-        private TextBox txtInputApellido;
-        private TextBox numberInputDni;
-        private Label lblNombre;
+        private ComboBox cmbMaterias;
+        private Curso cursoProgramacion;
+        private Curso cursoLaboratorio;
+        private GroupBox grpAltaAlumno;
+        private GroupBox grpAsignarMateria;
+        private Label lblAlumnosCreados;
         private Label lblApellido;
+        private Label lblDni;
+        private Label lblMateria;
+        private Label lblNombre;
+        private ListBox lstAlumnosCreados;
+        private ListBox lstAlumnosInscriptosLaboratorio;
+        private ListBox lstAlumnosInscriptosProgramacion;
+        private Persona profesorLabo;
+        private Persona profesorProgra;
+        private TextBox txtApellido;
+        private TextBox txtDni;
+        private TextBox txtNombre;
+
+
+        private Label label1;
+        private Label label2;
     }
 }

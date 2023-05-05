@@ -28,8 +28,7 @@ namespace _02
 
         private void btnDesafiar_Click(object sender, EventArgs e)
         {
-            if (Equipo.JugarPartido((Equipo)this.cmbEquipoUno.SelectedItem,
-                    (Equipo)cmbEquipoDos.SelectedItem))
+            if (Equipo.JugarPartido((Equipo)this.cmbEquipoUno.SelectedItem, (Equipo)cmbEquipoDos.SelectedItem))
 
             {
                 MessageBox.Show("Se Jugo el partido");
