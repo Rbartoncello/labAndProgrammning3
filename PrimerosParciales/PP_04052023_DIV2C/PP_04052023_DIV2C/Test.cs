@@ -16,13 +16,6 @@ namespace PP_04052023_DIV2C
             Alumno alumnoCinco = "44444444";
             Alumno alumnoSeis = "55555555";
 
-            var laboratorio = alumnoUno + EMateria.Laboratorio;
-            laboratorio = alumnoDos + EMateria.Laboratorio;
-            laboratorio = alumnoTres + EMateria.Laboratorio;
-            laboratorio = alumnoCuatro + EMateria.Programacion;
-            laboratorio = alumnoCinco + EMateria.Programacion;
-            laboratorio = alumnoSeis + EMateria.Programacion;
-
 
             Profesor proUno = new Profesor(12345, "profeUno@mail.com");
 
