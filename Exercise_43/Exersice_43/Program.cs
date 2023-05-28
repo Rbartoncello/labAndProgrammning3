@@ -10,23 +10,19 @@ namespace Exersice_43
             {
                 AutoF1 a1 = new AutoF1("a1", 1);
                 AutoF1 a2 = new AutoF1("a2", 2);
-                Competencia c = new Competencia(1, 2, Competencia.ETipoCompetencia.F1);
+                Competencia c = new Competencia(0, 2, Competencia.ETipoCompetencia.F1);
                 if (c != a1 && c + a1)
                 {
                     Console.WriteLine(a1.ToString());
                 }
-                if (c != a2 && c + a2)
-                {
-                    Console.WriteLine(a2.ToString());
-                }
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.ToString());
+                Console.WriteLine($"{e}\n");
                 while (e.InnerException is not null)
                 {
                     e = e.InnerException;
-                    Console.WriteLine(e.ToString());
+                    Console.WriteLine($"{e}\n");
                 }
             }
         }

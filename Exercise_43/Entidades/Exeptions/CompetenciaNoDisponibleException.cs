@@ -29,12 +29,12 @@ public class CompetenciaNoDisponibleException: Exception
         StringBuilder sb = new StringBuilder($"Excepción en el método {this.NombreMetodo} de la clase {this.NombreClase}");
         if (InnerException != null)
         {
-            sb.Append(InnerException.Message);
+            sb.AppendLine($"1\n{InnerException.Message}");
             Exception e = InnerException;
             while (e is not null)
             {
                 e = e.InnerException;
-                sb.Append(InnerException.Message);
+                sb.AppendLine($"{InnerException.Message}");
             }
         }
 
